@@ -35,6 +35,11 @@ const height = png.readUInt32BE(20);
 if (width !== 1024 || height !== 1024) {
   throw new Error(`entry.png is ${width}×${height}, expected 1024×1024`);
 }
+// Verify the IEND chunk: a complete PNG ends with a 12-byte IEND chunk
+// (0 length, "IEND", CRC). A truncated file would lack it.
+if (png.length < 12 || png.toString("ascii", png.length - 8, png.length - 4) !== "IEND") {
+  throw new Error("entry.png is truncated (missing IEND chunk)");
+}
 copyFileSync(src, dst);
 // Fail loudly if the copy did not land, so a bad run is never silent.
 const bytes = statSync(dst).size;
