@@ -40,6 +40,25 @@ if (width !== 1024 || height !== 1024) {
 if (png.length < 12 || png.toString("ascii", png.length - 8, png.length - 4) !== "IEND") {
   throw new Error("entry.png is truncated (missing IEND chunk)");
 }
+// Verify the image data is really there: walk the chunk list from the
+// end of the signature and look for an IDAT chunk. A header-only file
+// (IHDR + IEND, no pixels) would pass every check above but carry no
+// picture at all.
+let offset = 8;
+let foundImageData = false;
+while (offset + 8 <= png.length) {
+  const chunkLength = png.readUInt32BE(offset);
+  const chunkType = png.toString("ascii", offset + 4, offset + 8);
+  if (chunkType === "IDAT") {
+    foundImageData = true;
+    break;
+  }
+  if (chunkType === "IEND") break;
+  offset += 12 + chunkLength;
+}
+if (!foundImageData) {
+  throw new Error("entry.png has no IDAT chunk — no image data");
+}
 copyFileSync(src, dst);
 // Fail loudly if the copy did not land, so a bad run is never silent.
 const bytes = statSync(dst).size;
