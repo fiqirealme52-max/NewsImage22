@@ -2,21 +2,24 @@
 [![Rank](https://make.fun/badge/news-image-20261122/fiqirealme52-max/NewsImage22/rank.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 [![Reward](https://make.fun/badge/news-image-20261122/fiqirealme52-max/NewsImage22/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 
-# THE SUNDAY GLOBE — Sunday 22 November 2026: the world in one day
+# Sunday 22 November 2026 — one day, everything that happened: 35 stories, 7 regions
 
 Entry for the make.fun bounty [news-image-20261122](https://make.fun/bounty/news-image-20261122)
 ("Sum up 22 November's world news in one image", $100 pot).
 
-One 1024×1024 newspaper front page: **35 stories, 7 regions** — 5 leads,
-12 drawn scenes, 18 briefs — with a world map pinning all 35 stories, a
-DATE CHECK strip, and the hook **"ONE DAY, ONE CLOCK"**, a UTC timeline of
-the hours that made the day.
+One 1024×1024 one-day evidence board: **35 stories, 7 regions** — a giant
+date masthead, a strip of 6 checkable numbers (35 stories · 7 regions ·
+856 Hong Kong candidates · $500bn Nvidia value wiped · 629/6 India's record
+in NZ · 227 m Kerch Bridge arch), 3 leads + 10 mediums with drawn scenes,
+a correct-geography world map pinning the 13 drawn stories, 22 briefs, a
+one-line BY THE CLOCK strip, and a DATE CHECK box that names its one
+exception (Kerch Bridge, 16–17 Nov) instead of hiding it.
 
-Leads: COP31 nears a deal in Antalya (approval session 06:00 GMT) · Iran
-strikes US bases in Bahrain (both accounts) · Sparta II ablaze in the Gulf
-of Finland · Kryvyi Rih + Kyiv barrage · El Chapo Isidro captured.
-Every story carries its source (Reuters / AP / CNN / Xinhua / BBC / …) and
-every number was verified against real reporting from 13–22 Nov 2026.
+Leads: COP31's new text goes to objections (03:00 UTC) and approval
+(06:00 UTC) in Antalya — no deal adopted yet · Hong Kong votes, 856
+candidates for 723 seats · India 629/6, a record total in New Zealand.
+Every story carries its source (Reuters / AP / AFP / SCMP / BBC / …) and
+every number was verified against real reporting from 20–22 Nov 2026.
 
 ## Files
 
