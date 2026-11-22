@@ -1,4 +1,4 @@
-// News 22 (round 4) — one-day evidence board entrypoint.
+// News 22 (round 5) — one-day evidence board entrypoint.
 // Copies the pre-drawn entry image to the output directory.
 // Standard library only; no network.
 import { copyFileSync, mkdirSync, readFileSync, statSync } from "node:fs";
@@ -63,4 +63,4 @@ copyFileSync(src, dst);
 // Fail loudly if the copy did not land, so a bad run is never silent.
 const bytes = statSync(dst).size;
 if (bytes === 0) throw new Error("entry.png copy is empty");
-console.log(`wrote ${dst} (${width}×${height}, ${bytes} bytes) — News 22 round 4, 35 stories`);
+console.log(`wrote ${dst} (${width}×${height}, ${bytes} bytes) — News 22 round 5, 35 stories`);
